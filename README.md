@@ -1,7 +1,3 @@
-<style>
-img{width: 200px;}
-</style>
-
 # Back And Front Starter Pack
 
 ![Node/Express](/asset/logo/NodeExpress.png "Node / Express") 
