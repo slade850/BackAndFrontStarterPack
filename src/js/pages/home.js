@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const Home = () => {
 
     return (
-        <h1>Welcome to starter Pack by slade</h1>
+        <div>
+            <h1>Welcome to Back and Front starter Pack</h1>
+        </div>
             )
 }
 
