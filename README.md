@@ -17,3 +17,4 @@ Front side includes pages, home, register, login and protected.
 A redux store for authentication and dispatch user data.
 In addition to react router I used a custom routeGuard component to protect pages that need to be authenticated to access.
 
+for the api with babel dotenv works by default so use a file named '.env' only.
