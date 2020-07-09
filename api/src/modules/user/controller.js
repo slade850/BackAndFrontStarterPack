@@ -1,4 +1,4 @@
-const UserServices = require('./service');
+import UserServices from './service';
 
 const UserController = {
   register: (req, res) => {
@@ -24,4 +24,4 @@ const UserController = {
   },
 };
 
-module.exports = UserController;
+export default UserController;

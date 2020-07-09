@@ -1,12 +1,12 @@
-require('dotenv').config({path: ('apiConfig.env')});
-const express = require('express');
-const app = express();
-const cors = require('cors');
-const cookieParser = require('cookie-parser');
-const userRoutes = require('./modules/user/routes');
+import 'dotenv/config';
+import express from 'express';
+import cors from 'cors';
+import cookieParser from 'cookie-parser';
+import userRoutes from './modules/user/routes';
 const port = process.env.SERVER_PORT;
 require('./config/database');
 
+const app = express();
 // cors config for use cookie 
 app.use(cors({
     origin: true,

@@ -1,4 +1,4 @@
-const db = require("../../config/database");
+import db from "../../config/database";
 
 //init table user if not exist;
 const initUserTable = () => {
@@ -39,4 +39,4 @@ const Query = {
     },
 }
 
-module.exports = Query;
+export default Query;

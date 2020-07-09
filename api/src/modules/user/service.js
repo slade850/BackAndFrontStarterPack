@@ -1,7 +1,7 @@
-const bcrypt = require("bcrypt");
-const userQueries = require("./query");
-const jwt = require("jsonwebtoken");
-const { v4: uuidv4 } = require('uuid');
+import bcrypt from "bcrypt";
+import userQueries from "./query";
+import jwt from "jsonwebtoken";
+import { v4 as uuidv4 } from 'uuid';
 
 const userService = {
     register: (body) => {
@@ -88,4 +88,4 @@ const userService = {
     },
 };
 
-module.exports = userService;
+export default userService;
