@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node ./cli/script.js",
     "start:dev": "nodemon ./src/server.js",
     "start": "node ./src/server.js"
   },
@@ -12,6 +13,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "figlet": "^1.5.0",
+    "inquirer": "^7.3.3",
     "bcrypt": "^5.0.0",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
