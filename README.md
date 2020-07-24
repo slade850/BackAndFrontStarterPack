@@ -17,4 +17,4 @@ Front side includes pages, home, register, login and protected.
 A redux store for authentication and dispatch user data.
 In addition to react router I used a custom routeGuard component to protect pages that need to be authenticated to access.
 
-for the api with babel dotenv works by default so use a file named '.env' only.
+To install and configure the API, after getting the package go to the api folder and launch an 'npm install' not an 'npm i', all the packages will be installed and a small CLI will be launched to configure your environment variables. After that run an 'npm run start:dev' for nodemon and enjoy!!
