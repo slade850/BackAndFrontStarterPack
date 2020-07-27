@@ -52,11 +52,23 @@ const questions = [
     const takeInfo = async () => {
         const envInfo = await inquirer.prompt(questions);
         const fileData = `SERVER_PORT=${envInfo.serverPort} \n DB_PORT=${envInfo.dbPort} \n DB_HOST=localhost \n DB_USER=${envInfo.username} \n DB_PASS=${envInfo.password} \n DB_BASE=${envInfo.dataBase} \n SECRET_TOKEN=${envInfo.secretToken}`;
+        const fileApi = `import axios from 'axios'; \n
+        //config axios for work with cookies
+        axios.defaults.withCredentials = true;
+        //init an instance with url of api
+        const instance = axios.create({ 
+            baseURL: 'http://localhost:${envInfo.serverPort}/api/'
+        }) \n
+        export default instance;`;
 
         fs.writeFile('.env', fileData, {encoding: 'utf8'}, (err) => {
             if (err) throw err;
             console.log('Saved!');
         });
+        fs.writeFile('../src/js/utils/api.js', fileApi, { encoding: 'utf8'}, (err) => {
+            if (err) throw err;
+            console.log('Ready!');
+        })
     }
 
 takeInfo()
