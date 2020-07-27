@@ -17,4 +17,4 @@ Front side includes pages, home, register, login and protected.
 A redux store for authentication and dispatch user data.
 In addition to react router I used a custom routeGuard component to protect pages that need to be authenticated to access.
 
-To install and configure the API, after getting the package go to the api folder and launch an 'npm install' not an 'npm i', all the packages will be installed and a small CLI will be launched to configure your environment variables. After that run an 'npm run start:dev' for nodemon and enjoy!!
+To install and configure the project, after getting the package, run an "npm install" and not an "npm i", all packages will be installed and a small CLI will be launched to configure your environment variables. After that, run an 'npm run dev' for the frontend and in the api folder run 'npm run start:dev' to start the API with nodemon and enjoy!
